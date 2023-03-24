@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
 
 body {
-    background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/chevron.png');
+    background-image: url('bg.webp');
     font-family: 'Work Sans', sans-serif;
     display: flex;
     flex-direction: column;
