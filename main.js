@@ -46,9 +46,11 @@ function refreshMeal() {
         }
         // Set video
         if (randomMeal.strYoutube) {
+            document.getElementById("video-container").style.display = "flex";
             document.getElementById("video-title").innerText = "Recipe Video";
             document.getElementById("meal-video").src = `https://www.youtube.com/embed/${randomMeal.strYoutube.match(/v=\w+/)[0].substring(2)}`;
         } else {
+            document.getElementById("video-container").style.display = "none";
             document.getElementById("video-title").innerText = "";
             document.getElementById("meal-video").src = "";
         }
