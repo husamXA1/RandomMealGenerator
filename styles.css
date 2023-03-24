@@ -74,7 +74,7 @@ body {
 }
 
 .meal div:first-of-type div:first-of-type p {
-    
+    line-height: 1.8;
 }
 
 .meal div:first-of-type div:last-of-type {
@@ -82,6 +82,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+.meal div:first-of-type div:last-of-type h4 {
+    margin: 0;
+}
+
+
+.meal div:first-of-type div:last-of-type ul {
+    line-height: 1.8;
 }
 
 .meal img {
