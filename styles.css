@@ -1,3 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
 body {
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/chevron.png');
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-height: 100vh;
+    font-size: 22px;
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Styling header */
+.header {
+    text-align: center;
+    margin: 50px;
+}
+
+.header h3 {
+    font-size: 42px;
+    margin: 20px;
+}
+
+.header h5 {
+    font-size: 22px;
+    margin: 20px;
+}
+
+.header button {
+    padding: 10px 20px;
+    background-color: #aaa;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header button:hover {
+    background-color: #ddd;
+}
+
+/* Styling meal */
+.meal {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    margin: 10px auto;
+}
+
+.meal div:first-of-type {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.meal div:first-of-type div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px;
+}
+
+.meal div:first-of-type div:first-of-type h3 {
+    font-size: 32px
+}
+
+.meal div:first-of-type div:first-of-type p {
+    
+}
+
+.meal div:first-of-type div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.meal img {
+    width: 40vw;
+}
+
+@media (max-width: 767px) {
+    .meal div:first-of-type {
+        flex-direction: column;
+    }
+
+    .meal img {
+        width: 90vw;
+    }
+}
+
+/* Styling Video */
+.meal div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.meal div:last-of-type h4 {
+    font-size: 32px;
+}
+
+.meal div:last-of-type iframe {
+    width: 90vw;
+    height: 50vw;
+}
+
+@media (max-width: 767px) {
+    .meal div:last-of-type h4 {
+        font-size: 22px;
+    }
 }
